@@ -1,20 +1,61 @@
-# Checkers AI Game
+# PDF Search Engine
 
-A console-based implementation of the classic **Checkers (Draughts)** game where the program acts as one of the players using artificial intelligence techniques to make decisions.
+A search engine for PDF documents that parses document pages, builds efficient data structures for indexing, and allows users to perform ranked text searches through a console interface.
 
 ## Features
 
-- Full implementation of standard 8x8 checkers board
-- Console visualization of the board after every move
-- Move suggestions for the human player
-- Highlighting available moves
-- Multiple jump captures
-- AI opponent using:
-  - Minimax algorithm
-  - Alpha-beta pruning
-  - Heuristic evaluation function
-  - Variable search depth
+- PDF document parsing
+- Page indexing
+- Ranked search results
+- Context snippets for matched results
+- Multi-word query support
+- Boolean operators:
+  - AND
+  - OR
+  - NOT
+- Phrase search
+- Autocomplete suggestions
+- "Did you mean?" suggestions
+- Result pagination
+- Serialization for faster startup
+- PDF result exporting
+
+## Data Structures & Algorithms
+
+- Trie for efficient word lookup
+- Graph for page relationship modeling
+- Ranking algorithm based on:
+  - keyword frequency
+  - page references
+  - linked page relevance
+
+## Technologies
+
+- Python
+- PDF processing libraries
+- Trie
+- Graphs
+- File serialization
+
 ## How it works
 
-The program simulates a full game of checkers between a human player and an AI opponent.  
-The AI evaluates possible board states and chooses the optimal move within a limited time constraint.
+When the application starts, it parses a PDF document and creates indexing structures for efficient searching.
+
+Users can then enter search queries such as:
+
+- single keywords
+- multiple keywords
+- phrases
+- boolean expressions
+
+The system returns ranked pages along with text snippets showing where matches were found.
+
+## Learning outcomes
+
+This project helped me improve my understanding of:
+
+- information retrieval systems
+- indexing
+- ranking algorithms
+- advanced data structures
+- PDF processing
